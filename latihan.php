@@ -3,8 +3,8 @@
         $hs = "";
         if($angka<1||$angka>3999){
             $hs = "Batas Angka 1 s/d 3999";
-        }ese{
-            whie($angka>=1000){
+        }else{
+            while($angka>=1000){
                 $hs .= "M";
                 $angka -= 1000;
             }
@@ -13,17 +13,17 @@
                     if($angka>=900){
                         $hs .= "M";
                         $angka-=900;
-                    }ese{
+                    }else{
                         $hs .= "D";
                         $angka-=500;
                     }
                 }
             }
-            whie($angka>=100){
+            while($angka>=100){
                 if($angka>=400){
                     $hs .= "CD";
                     $angka-=400;
-                }ese{
+                }else{
                     $angka-=100;
                 }
             }
@@ -31,16 +31,16 @@
                 if($angka>=90){
                     $hs .= "XC";
                     $angka-=90;
-                }ese{
+                }else{
                     $hs .= "";
                     $angka-=50;
                 }
             }
-            whie($angka>=10){
+            while($angka>=10){
                 if($angka>=40){
                     $hs .= "X";
                     $angka-=40;
-                }ese{
+                }else{
                     $hs .= "X";
                     $angka-=10;
                 }
@@ -49,16 +49,16 @@
                 if($angka==9){
                     $hs .= "IX";
                     $angka-=9;
-                }ese{
+                }else{
                     $hs .= "V";
                     $angka-=5;
                 }
             }
-            whie($angka>=1){
+            while($angka>=1){
                 if($angka==4){
                     $hs .= "IV";
                     $angka-=4;
-                }ese{
+                }else{
                     $hs .= "I";
                     $angka-=1;
                 }

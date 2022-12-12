@@ -11,7 +11,7 @@
             if($angka>=500){
                 if($angka>500){
                     if($angka>=900){
-                        $hs .= "M";
+                        $hs .= "CM";
                         $angka-=900;
                     }else{
                         $hs .= "D";
@@ -23,7 +23,7 @@
                 if($angka>=400){
                     $hs .= "CD";
                     $angka-=400;
-                }else{
+                }else{$hs .= "C";
                     $angka-=100;
                 }
             }
@@ -32,13 +32,13 @@
                     $hs .= "XC";
                     $angka-=90;
                 }else{
-                    $hs .= "";
+                    $hs .= "L";
                     $angka-=50;
                 }
             }
             while($angka>=10){
                 if($angka>=40){
-                    $hs .= "X";
+                    $hs .= "XL";
                     $angka-=40;
                 }else{
                     $hs .= "X";
